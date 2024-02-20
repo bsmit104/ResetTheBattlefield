@@ -148,7 +148,7 @@ public class AIManager : MonoBehaviour
         if (playerHealth != null)
         {
             playerObject.transform.position = new Vector3(640.9f, 14.021f, 65.394f);
-            playerHealth.ChangeHealth(-50);
+            playerHealth.ChangeHealth(-5);
         }
         else
         {
