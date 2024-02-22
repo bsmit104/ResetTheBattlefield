@@ -7,6 +7,7 @@ public class Shoot : MonoBehaviour
 {
 
     public GameObject bulletObj;
+    public GameObject decalPrefab;
     public float bulletSpeed = 50f;
     public int maxBullets = 10;
     private int currentShots = 10;
@@ -15,6 +16,8 @@ public class Shoot : MonoBehaviour
     public float reloadTime = 2f;
 
     public GameObject gun;
+    private List<GameObject> decals = new List<GameObject>();
+    public int maxDecals = 10;
 
 
     //sound
@@ -93,34 +96,47 @@ public class Shoot : MonoBehaviour
     }
 
     void ShootBullet()
+    {
+        //ChatGPT How can I make the Bullet shoot base on where the camera is pointing
+        //Fixed lecture notes code.
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 200.0f))
         {
-            //ChatGPT How can I make the Bullet shoot base on where the camera is pointing
-            //Fixed lecture notes code.
-            RaycastHit hit;
-
-            if (Physics.Raycast(transform.position, transform.forward, out hit, 200.0f))
-            {
-                Debug.Log(hit.collider.gameObject.name);
-                Debug.DrawRay(transform.position, transform.forward * 2.0f, Color.green, 0.2f, true);
-            }
-            else
-            {
-                //Debug.Log("Missed");
-                Debug.DrawRay(transform.position, transform.forward * 2.0f, Color.red, 0.2f, true);
-            }
-
-
-            Vector3 spawnPosition = transform.position + transform.forward + new Vector3(0, 0.5f, 0);
-
-            GameObject newBullet = Instantiate(bulletObj, spawnPosition, transform.rotation);
-
-
-
-            Rigidbody bulletRb = newBullet.GetComponent<Rigidbody>();
-            bulletRb.AddForce(Camera.main.transform.forward * bulletSpeed, ForceMode.VelocityChange);
-
+            CreateDecal(hit);
+            Debug.Log(hit.collider.gameObject.name);
+            Debug.DrawRay(transform.position, transform.forward * 2.0f, Color.green, 0.2f, true);
+        }
+        else
+        {
+            //Debug.Log("Missed");
+            Debug.DrawRay(transform.position, transform.forward * 2.0f, Color.red, 0.2f, true);
         }
 
 
-   
+        Vector3 spawnPosition = transform.position + transform.forward + new Vector3(0, 0.5f, 0);
+
+        GameObject newBullet = Instantiate(bulletObj, spawnPosition, transform.rotation);
+
+
+
+        Rigidbody bulletRb = newBullet.GetComponent<Rigidbody>();
+        bulletRb.AddForce(Camera.main.transform.forward * bulletSpeed, ForceMode.VelocityChange);
+
     }
+
+    void CreateDecal(RaycastHit hit)
+    {
+        if (decals.Count >= maxDecals)
+        {
+            Destroy(decals[0]);
+            decals.RemoveAt(0);
+        }
+
+        var decal = Instantiate(decalPrefab, hit.point + hit.normal * 0.001f, Quaternion.LookRotation(hit.normal));
+        decals.Add(decal);
+    }
+
+
+
+}

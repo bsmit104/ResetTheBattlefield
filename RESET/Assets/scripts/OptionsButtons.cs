@@ -49,6 +49,6 @@ public class OptionsButtons : MonoBehaviour
     }
 
     public void ToMenu() {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("HomeScreen");
     }
 }
