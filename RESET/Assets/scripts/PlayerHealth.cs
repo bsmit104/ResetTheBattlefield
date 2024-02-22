@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public static bool died = false;
     private int currentHealth;
     public GameObject playerObject;
-    // public GameObject gameOver;
+    public GameObject gameOver;
 
     // public GameObject score;
 
@@ -44,7 +44,7 @@ public class PlayerHealth : MonoBehaviour
     }
 
      public void BackAlive() {
-        // gameOver.SetActive(false);
+        gameOver.SetActive(false);
         // win.SetActive(false);
         Time.timeScale = 1f;
         died = false;
@@ -62,7 +62,7 @@ public class PlayerHealth : MonoBehaviour
     }
 
     void DeadPause() {
-        // gameOver.SetActive(true);
+        gameOver.SetActive(true);
         Time.timeScale = 0f;
         died = true;
         Cursor.lockState = CursorLockMode.None;
