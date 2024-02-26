@@ -6715,7 +6715,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8162693080510756347, guid: 0f259b7c9df9cc74ebadf17f7a79fe95, type: 3}
       insertIndex: -1
       addedObject: {fileID: 715678670}
-    - targetCorrespondingSourceObject: {fileID: 8162693080510756347, guid: 0f259b7c9df9cc74ebadf17f7a79fe95, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 9120241050211205370, guid: 0f259b7c9df9cc74ebadf17f7a79fe95, type: 3}
       insertIndex: -1
       addedObject: {fileID: 566410218}
     m_AddedComponents: []
@@ -11745,11 +11745,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 394808143}
+    m_TransformParent: {fileID: 710535023}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4ed3002035b61714495da0acf91278ff, type: 3}
       propertyPath: m_LocalScale.x
-      value: 56.159004
+      value: 56.15901
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ed3002035b61714495da0acf91278ff, type: 3}
       propertyPath: m_LocalScale.y
@@ -11757,39 +11757,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ed3002035b61714495da0acf91278ff, type: 3}
       propertyPath: m_LocalScale.z
-      value: 56.159
+      value: 56.158993
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ed3002035b61714495da0acf91278ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.0664432
+      value: 1.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ed3002035b61714495da0acf91278ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.43
+      value: -0.82
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ed3002035b61714495da0acf91278ff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.3621087
+      value: 1.69
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ed3002035b61714495da0acf91278ff, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70569104
+      value: 0.64869404
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ed3002035b61714495da0acf91278ff, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.70569104
+      value: -0.7546016
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ed3002035b61714495da0acf91278ff, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.044723064
+      value: 0.074963875
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ed3002035b61714495da0acf91278ff, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.044723064
+      value: 0.0644428
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ed3002035b61714495da0acf91278ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
+      value: -98.632
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ed3002035b61714495da0acf91278ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -11797,7 +11797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ed3002035b61714495da0acf91278ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -139.687
+      value: 11.347
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4ed3002035b61714495da0acf91278ff, type: 3}
       propertyPath: m_Name
@@ -11892,6 +11892,11 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 81eb591e4db6e654684ae1c4168e279f, type: 2}
   m_BuildHeightMesh: 0
+--- !u!4 &710535023 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9120241050211205370, guid: 0f259b7c9df9cc74ebadf17f7a79fe95, type: 3}
+  m_PrefabInstance: {fileID: 517485593}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &715678669
 GameObject:
   m_ObjectHideFlags: 0
