@@ -22,8 +22,8 @@ public class Shoot : MonoBehaviour
 
     //sound
     //https://www.youtube.com/watch?v=D9xuTISZ5h4&ab_channel=VionixStudio
-    // public AudioSource audioSource;
-    // public AudioClip shootSound;
+    public AudioSource audioSource;
+    public AudioClip shootSound;
 
     // public AudioSource reload;
     // public AudioClip reloadSound;
@@ -62,7 +62,7 @@ public class Shoot : MonoBehaviour
                 ShootBullet();
 
                 currentShots--;
-                // audioSource.Play();
+                audioSource.Play();
 
 
 

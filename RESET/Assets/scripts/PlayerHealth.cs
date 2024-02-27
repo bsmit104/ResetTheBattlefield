@@ -69,3 +69,62 @@ public class PlayerHealth : MonoBehaviour
         Cursor.visible = true;
     }
 }
+
+//////////////////////if using game manager to preserve health/////////////////
+// using UnityEngine;
+// using UnityEngine.UI;
+
+// public class PlayerHealth : MonoBehaviour
+// {
+//     [SerializeField] private Slider healthBar;
+//     public GameObject playerObject;
+//     public GameObject gameOver;
+
+//     void Start()
+//     {
+//         UpdateHealthUI();
+//     }
+
+//     void Update()
+//     {
+//         if (Input.GetKeyDown(KeyCode.Space))
+//         {
+//             GameManager.Instance.ChangeHealth(-5);
+//             UpdateHealthUI();
+//         }
+//     }
+
+//     private void UpdateHealthUI()
+//     {
+//         if (healthBar != null)
+//         {
+//             healthBar.value = (float)GameManager.Instance.CurrentHealth / GameManager.Instance.MaxHealth;
+//         }
+//     }
+
+//     public void BackAlive()
+//     {
+//         gameOver.SetActive(false);
+//         Time.timeScale = 1f;
+//         GameManager.Instance.ChangeHealth(GameManager.Instance.MaxHealth - GameManager.Instance.CurrentHealth); // Fully restore health
+//         Cursor.lockState = CursorLockMode.Locked;
+//         Cursor.visible = false;
+
+//         if (playerObject != null)
+//         {
+//             playerObject.transform.position = new Vector3(640.9f, 14.021f, 65.394f);
+//         }
+//         else
+//         {
+//             Debug.Log("playerObject is null");
+//         }
+//     }
+
+//     void DeadPause()
+//     {
+//         gameOver.SetActive(true);
+//         Time.timeScale = 0f;
+//         Cursor.lockState = CursorLockMode.None;
+//         Cursor.visible = true;
+//     }
+// }

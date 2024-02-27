@@ -145,6 +145,29 @@ public class AIManager : MonoBehaviour
 
     private void killPlayer()
     {
+        // if (playerHealth != null)
+        // {
+        //     playerObject.transform.position = new Vector3(640.9f, 14.021f, 65.394f);
+        //     playerHealth.ChangeHealth(-5);
+        // }
+    //     if (Vector3.Distance(transform.position, player.position) < killDistance)
+    // {
+    //     // Apply damage to the player via the GameManager
+    //     GameManager.Instance.ChangeHealth(-5); // Adjust the amount based on your game's needs
+
+    //     // Optionally, if you want to respawn or move the player upon "death"
+    //     // Consider handling this inside the GameManager or a dedicated method
+    //     // after verifying the player's health reached 0 or below.
+    //     // For instance:
+    //     if (GameManager.Instance.CurrentHealth <= 0)
+    //     {
+    //         // Handle player death, like respawning or showing game over
+    //         // This might reset the player's position, show UI, etc.
+    //         Debug.Log("Player has been killed. Handle death logic here.");
+    //         // Example: Reset player's position or trigger a respawn method
+    //         playerObject.transform.position = new Vector3(640.9f, 14.021f, 65.394f);
+    //     }
+    // }
         if (playerHealth != null)
         {
             playerObject.transform.position = new Vector3(640.9f, 14.021f, 65.394f);
