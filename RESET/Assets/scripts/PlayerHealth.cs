@@ -26,10 +26,10 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        // if (Input.GetKeyDown(KeyCode.Space))
-        // {
-        //     ChangeHealth(-5);
-        // }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ChangeHealth(-5);
+        }
     }
 
     public void ChangeHealth(int amount) {
