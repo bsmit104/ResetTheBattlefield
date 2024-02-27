@@ -101,17 +101,30 @@ public class Shoot : MonoBehaviour
         //Fixed lecture notes code.
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 200.0f))
-        {
-            CreateDecal(hit);
-            Debug.Log(hit.collider.gameObject.name);
-            Debug.DrawRay(transform.position, transform.forward * 2.0f, Color.green, 0.2f, true);
-        }
-        else
-        {
-            //Debug.Log("Missed");
-            Debug.DrawRay(transform.position, transform.forward * 2.0f, Color.red, 0.2f, true);
-        }
+        
+    if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 200.0f))
+    {
+        CreateDecal(hit);
+        Debug.Log("Hit object name: " + hit.collider.gameObject.name);
+        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * 2.0f, Color.green, 0.2f, true);
+    }
+    else
+    {
+        Debug.Log("Missed");
+        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * 2.0f, Color.red, 0.2f, true);
+    }
+
+        // if (Physics.Raycast(transform.position, transform.forward, out hit, 200.0f))
+        // {
+        //     CreateDecal(hit);
+        //     Debug.Log(hit.collider.gameObject.name);
+        //     Debug.DrawRay(transform.position, transform.forward * 2.0f, Color.green, 0.2f, true);
+        // }
+        // else
+        // {
+        //     Debug.Log("Missed");
+        //     Debug.DrawRay(transform.position, transform.forward * 2.0f, Color.red, 0.2f, true);
+        // }
 
 
         Vector3 spawnPosition = transform.position + transform.forward + new Vector3(0, 0.5f, 0);
@@ -127,6 +140,10 @@ public class Shoot : MonoBehaviour
 
     void CreateDecal(RaycastHit hit)
     {
+        Debug.Log("Hey");
+        Debug.Log("Hit point: " + hit.point);
+        Debug.Log("Hit normal: " + hit.normal);
+        Debug.Log("Collider name: " + hit.collider.gameObject.name);
         if (decals.Count >= maxDecals)
         {
             Destroy(decals[0]);
