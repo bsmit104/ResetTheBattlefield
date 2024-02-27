@@ -25,8 +25,8 @@ public class Shoot : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip shootSound;
 
-    // public AudioSource reload;
-    // public AudioClip reloadSound;
+    public AudioSource reload;
+    public AudioClip reloadSound;
 
     // Start is called before the first frame update
     void Start()
@@ -39,8 +39,8 @@ public class Shoot : MonoBehaviour
         {
             Debug.Log("Object is disabled.");
         }
-        // audioSource.clip = shootSound;
-        // reload.clip = reloadSound;
+        audioSource.clip = shootSound;
+        reload.clip = reloadSound;
 
     }
 
@@ -81,7 +81,7 @@ public class Shoot : MonoBehaviour
             //Reload();
             isReloading = true;
             StartCoroutine(ReloadCoroutine());
-            // reload.Play();
+            reload.Play();
         }
     }
 
