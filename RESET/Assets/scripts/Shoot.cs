@@ -28,6 +28,8 @@ public class Shoot : MonoBehaviour
     public AudioSource reload;
     public AudioClip reloadSound;
 
+    Animator animation1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +43,11 @@ public class Shoot : MonoBehaviour
         }
         audioSource.clip = shootSound;
         reload.clip = reloadSound;
+
+        animation1 = GetComponent<Animator>();
+        animation1.speed = 0;
+
+
 
     }
 
@@ -59,8 +66,14 @@ public class Shoot : MonoBehaviour
         {
             if (currentShots > 0)
             {
-                ShootBullet();
 
+                if (animation1.speed == 0)
+                {
+                    animation1.speed = 1;
+                }
+
+                ShootBullet();
+                animation1.Play("Shoot", 0, 0.0f);
                 currentShots--;
                 audioSource.Play();
 
@@ -79,7 +92,13 @@ public class Shoot : MonoBehaviour
         {
 
             //Reload();
+
+            if (animation1.speed == 0)
+            {
+                animation1.speed = 1;
+            }
             isReloading = true;
+            animation1.Play("Reload", 0, 0.0f);
             StartCoroutine(ReloadCoroutine());
             reload.Play();
         }
