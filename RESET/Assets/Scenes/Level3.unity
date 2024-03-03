@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 1205184256}
   - component: {fileID: 1205184255}
   m_Layer: 0
-  m_Name: sceneCheatKey(S)
+  m_Name: sceneCheatKey(p)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

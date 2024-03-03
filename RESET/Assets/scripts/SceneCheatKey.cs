@@ -12,7 +12,7 @@ public class SceneCheatKey : MonoBehaviour
     void Update()
     {
         // When the 'S' key is pressed, load the next scene in the list.
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             // Load the next scene.
             LoadNextScene();

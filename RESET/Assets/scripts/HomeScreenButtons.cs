@@ -18,6 +18,11 @@ public class HomeScreenButtons : MonoBehaviour
         SceneManager.LoadScene("Credits"); // Replace "CreditsScene" with the scene name for your credits menu.
     }
 
+    public void Cutscene()
+    {
+        SceneManager.LoadScene("Cutscene"); // Replace "CreditsScene" with the scene name for your credits menu.
+    }
+
     public void lev1()
     {
         SceneManager.LoadScene("Level1"); // Replace "CreditsScene" with the scene name for your credits menu.
