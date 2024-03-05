@@ -126,13 +126,18 @@ public class Shoot : MonoBehaviour
         CreateDecal(hit);
         Debug.Log("Hit object name: " + hit.collider.gameObject.name);
         Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * 2.0f, Color.green, 0.2f, true);
+        if (hit.collider.CompareTag("Enemy"))
+        {
+            // Implement enemy damage logic here
+            Debug.Log("pew pew bitch!");
+            Destroy(hit.collider.gameObject);
+        }
     }
     else
     {
         Debug.Log("Missed");
         Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * 2.0f, Color.red, 0.2f, true);
     }
-
         // if (Physics.Raycast(transform.position, transform.forward, out hit, 200.0f))
         // {
         //     CreateDecal(hit);
@@ -146,14 +151,14 @@ public class Shoot : MonoBehaviour
         // }
 
 
-        Vector3 spawnPosition = transform.position + transform.forward + new Vector3(0, 0.5f, 0);
+        // Vector3 spawnPosition = transform.position + transform.forward + new Vector3(0, 0.5f, 0);
 
-        GameObject newBullet = Instantiate(bulletObj, spawnPosition, transform.rotation);
+        // GameObject newBullet = Instantiate(bulletObj, spawnPosition, transform.rotation);
 
 
 
-        Rigidbody bulletRb = newBullet.GetComponent<Rigidbody>();
-        bulletRb.AddForce(Camera.main.transform.forward * bulletSpeed, ForceMode.VelocityChange);
+        // Rigidbody bulletRb = newBullet.GetComponent<Rigidbody>();
+        // bulletRb.AddForce(Camera.main.transform.forward * bulletSpeed, ForceMode.VelocityChange);
 
     }
 

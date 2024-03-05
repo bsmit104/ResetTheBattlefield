@@ -8,6 +8,7 @@ public class PauseButtons : MonoBehaviour
 {
     public static bool Paused = false;
     public GameObject pauseMenu;
+    public GameObject crosshair;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)) {
@@ -22,6 +23,7 @@ public class PauseButtons : MonoBehaviour
 
     public void Resume() {
         Debug.Log("pressed");
+        crosshair.SetActive(true);
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         Paused = false;
@@ -30,6 +32,7 @@ public class PauseButtons : MonoBehaviour
     }
 
     void Pause() {
+        crosshair.SetActive(false);
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         Paused = true;
