@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e96101b599bfb8344a2a4b9b9cec7e17
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215366
+  packageName: os. Easy Ghost Shader | Ghost Effect with Shader Graph
+  packageVersion: 1.1.0
+  assetPath: Assets/OccaSoftware/Ghost Shader/Materials/M_Ghost_Lit.mat
+  uploadId: 556469

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 88bd3035638e6fe43988eb0adf0d4eb2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215366
+  packageName: os. Easy Ghost Shader | Ghost Effect with Shader Graph
+  packageVersion: 1.1.0
+  assetPath: Assets/OccaSoftware/Ghost Shader/DemoResources/Prefabs/Default Shader
+    (Metal Material).prefab
+  uploadId: 556469
