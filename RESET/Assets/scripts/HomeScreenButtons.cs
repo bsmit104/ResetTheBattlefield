@@ -37,4 +37,9 @@ public class HomeScreenButtons : MonoBehaviour
     {
         SceneManager.LoadScene("Level3"); // Replace "CreditsScene" with the scene name for your credits menu.
     }
+
+    public void lev4()
+    {
+        SceneManager.LoadScene("Level4"); // Replace "CreditsScene" with the scene name for your credits menu.
+    }
 }
