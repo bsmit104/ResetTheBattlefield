@@ -277,7 +277,7 @@ Transform:
   m_GameObject: {fileID: 15195383}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.05, y: -11.794, z: -4.24}
+  m_LocalPosition: {x: -14.92, y: -21.4, z: -2.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1595,7 +1595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 298932657}
   m_Layer: 0
-  m_Name: wayPoint2
+  m_Name: wayPoint2.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1610,7 +1610,7 @@ Transform:
   m_GameObject: {fileID: 298932656}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.54, y: -38.22, z: 112.73}
+  m_LocalPosition: {x: 41.09, y: -38.22, z: 97.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11972,7 +11972,7 @@ Transform:
   m_GameObject: {fileID: 504804081}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.82, y: -11.847, z: 1.08}
+  m_LocalPosition: {x: -19.21, y: -21.45, z: -1.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17112,12 +17112,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDetectionRange: 10
-  chaseDistance: 5
-  killDistance: 1
+  chaseDistance: 10
+  killDistance: 7
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
-  playerObject: {fileID: 1643988320}
+  playerObject: {fileID: 2134641573}
   patrolWaypoints:
   - {fileID: 504804082}
   - {fileID: 15195384}
@@ -17233,7 +17233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beamRange: 5
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 5
+  killDistance: 7
 --- !u!1 &614093206 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4504409719310791647, guid: 9b14e6704f066704d801c2a1d4a3a421, type: 3}
@@ -18056,7 +18056,7 @@ GameObject:
   m_Component:
   - component: {fileID: 892175338}
   m_Layer: 0
-  m_Name: wayPoint2
+  m_Name: wayPoint2.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18071,7 +18071,7 @@ Transform:
   m_GameObject: {fileID: 892175337}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.38, y: -11.847, z: -29.68}
+  m_LocalPosition: {x: -51.591, y: -11.847, z: -92.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18855,7 +18855,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1851772007}
+  - {fileID: 2119941641}
   - {fileID: 2052057448}
   - {fileID: 298932657}
   m_Father: {fileID: 586378627}
@@ -24026,7 +24026,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2119941641}
+  - {fileID: 1851772007}
   - {fileID: 2013078103}
   - {fileID: 892175338}
   m_Father: {fileID: 586378627}
@@ -24819,6 +24819,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361567056}
   m_CullTransparentMesh: 1
+--- !u!1 &1372464725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b14e6704f066704d801c2a1d4a3a421, type: 3}
+  m_PrefabInstance: {fileID: 1916231159}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1372464726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372464725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
+--- !u!114 &1372464727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372464725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 995576fd12fcc194992d866d74e4bdd4, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1 &1374308959 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8019028671651874581, guid: 9b14e6704f066704d801c2a1d4a3a421, type: 3}
@@ -25671,6 +25726,7 @@ MonoBehaviour:
   maxHealth: 90
   playerObject: {fileID: 2134641573}
   gameOver: {fileID: 739990412}
+  crosshair: {fileID: 2045749989}
 --- !u!114 &1611004186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25683,11 +25739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef8283b5ce9f19468ec92ea9a469ed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1643988320 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8250313040105318574, guid: 0f259b7c9df9cc74ebadf17f7a79fe95, type: 3}
-  m_PrefabInstance: {fileID: 141239585}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1646854727 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9141816029861474070, guid: 9b14e6704f066704d801c2a1d4a3a421, type: 3}
@@ -26169,11 +26220,11 @@ Transform:
   m_GameObject: {fileID: 1851772006}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28.79, y: -36.7, z: 98.3}
+  m_LocalPosition: {x: -61.770004, y: -9.979996, z: -62.799995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1087998036}
+  m_Father: {fileID: 1199395645}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1851772008
 Rigidbody:
@@ -26215,15 +26266,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDetectionRange: 10
-  chaseDistance: 5
-  killDistance: 1
+  chaseDistance: 10
+  killDistance: 7
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
-  playerObject: {fileID: 1643988320}
+  playerObject: {fileID: 2134641573}
   patrolWaypoints:
-  - {fileID: 298932657}
-  - {fileID: 2052057448}
+  - {fileID: 2013078103}
+  - {fileID: 892175338}
   health: {fileID: 2106411480}
 --- !u!195 &1851772010
 NavMeshAgent:
@@ -26336,7 +26387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beamRange: 5
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 5
+  killDistance: 7
 --- !u!1 &1869253755 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7917349904687423284, guid: 9b14e6704f066704d801c2a1d4a3a421, type: 3}
@@ -26534,6 +26585,12 @@ PrefabInstance:
     - {fileID: 7869873546869171050, guid: 9b14e6704f066704d801c2a1d4a3a421, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b14e6704f066704d801c2a1d4a3a421, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1372464727}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b14e6704f066704d801c2a1d4a3a421, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1372464726}
     - targetCorrespondingSourceObject: {fileID: 9013638940889411661, guid: 9b14e6704f066704d801c2a1d4a3a421, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1983021444}
@@ -27195,7 +27252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2013078103}
   m_Layer: 0
-  m_Name: wayPoint1
+  m_Name: wayPoint1.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27210,7 +27267,7 @@ Transform:
   m_GameObject: {fileID: 2013078102}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.63, y: -11.794, z: -1.11}
+  m_LocalPosition: {x: -65.24, y: -11.794, z: -83.103}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27403,7 +27460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2052057448}
   m_Layer: 0
-  m_Name: wayPoint1
+  m_Name: wayPoint1.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27418,7 +27475,7 @@ Transform:
   m_GameObject: {fileID: 2052057447}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -48.2, y: -39.1, z: 109.6}
+  m_LocalPosition: {x: 16.221, y: -38.261, z: 82.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27566,6 +27623,7 @@ MonoBehaviour:
   maxHealth: 90
   playerObject: {fileID: 2134641573}
   gameOver: {fileID: 739990412}
+  crosshair: {fileID: 2045749989}
 --- !u!114 &2106411483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27649,11 +27707,11 @@ Transform:
   m_GameObject: {fileID: 2119941640}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5, y: -0.5, z: -65.6}
+  m_LocalPosition: {x: 31.48, y: -36.791, z: 95.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1199395645}
+  m_Father: {fileID: 1087998036}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &2119941642
 Rigidbody:
@@ -27695,15 +27753,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDetectionRange: 10
-  chaseDistance: 5
-  killDistance: 1
+  chaseDistance: 10
+  killDistance: 7
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
-  playerObject: {fileID: 1643988320}
+  playerObject: {fileID: 2134641573}
   patrolWaypoints:
-  - {fileID: 892175338}
-  - {fileID: 2013078103}
+  - {fileID: 2052057448}
+  - {fileID: 298932657}
   health: {fileID: 2106411480}
 --- !u!195 &2119941644
 NavMeshAgent:
@@ -27814,9 +27872,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8248c8c1000c554a8f537ddc5d70fdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beamRange: 5
+  beamRange: 10
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 5
+  killDistance: 7
 --- !u!1 &2134641573 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8250313040105318574, guid: 0f259b7c9df9cc74ebadf17f7a79fe95, type: 3}

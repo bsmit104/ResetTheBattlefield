@@ -12,6 +12,8 @@ public class PlayerHealth : MonoBehaviour
     private int currentHealth;
     public GameObject playerObject;
     public GameObject gameOver;
+
+    public GameObject crosshair;
     private Vector3 startingPosition;
 
     void Start()
@@ -25,10 +27,10 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ChangeHealth(-5);
-        }
+        // if (Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     ChangeHealth(-5);
+        // }
     }
 
     public void ChangeHealth(int amount) {
@@ -43,12 +45,14 @@ public class PlayerHealth : MonoBehaviour
     }
 
      public void BackAlive() {
+        crosshair.SetActive(true);
         gameOver.SetActive(false);
         Time.timeScale = 1f;
         died = false;
         ChangeHealth(maxHealth); // Reset health to max
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        //AIManager.stopCoroutineAfterDie();
 
         // Reset player position to starting position
         if (playerObject != null)
@@ -61,6 +65,7 @@ public class PlayerHealth : MonoBehaviour
     }
 
     void DeadPause() {
+        crosshair.SetActive(false);
         gameOver.SetActive(true);
         Time.timeScale = 0f;
         died = true;

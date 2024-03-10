@@ -6064,6 +6064,7 @@ MonoBehaviour:
   maxHealth: 90
   playerObject: {fileID: 707909981}
   gameOver: {fileID: 1668613105}
+  crosshair: {fileID: 167603347}
 --- !u!114 &271375912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6644,6 +6645,7 @@ MonoBehaviour:
   maxHealth: 90
   playerObject: {fileID: 707909981}
   gameOver: {fileID: 1668613105}
+  crosshair: {fileID: 0}
 --- !u!114 &504864002
 MonoBehaviour:
   m_ObjectHideFlags: 0

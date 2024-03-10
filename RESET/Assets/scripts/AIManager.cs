@@ -1,6 +1,7 @@
 //asked chatgpt for FSM examples in Unity, it recommended attack, patrol, and chase
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
 
 public class AIManager : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class AIManager : MonoBehaviour
 
     public GameObject health;
     private PlayerHealth playerHealth;
+    bool alreadystarted = true;
+
+    private float distanceToPlayer;
 
 
     public enum AIState
@@ -61,7 +65,7 @@ public class AIManager : MonoBehaviour
         //         // Player is in line of sight
         //         OnPlayerDetected();
         //     }
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+        distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
         if (distanceToPlayer < chaseDistance)
         {
@@ -74,7 +78,17 @@ public class AIManager : MonoBehaviour
 
         if (distanceToPlayer < killDistance)
         {
-            killPlayer();
+            Debug.Log("if");
+            //killPlayer();
+            if (alreadystarted) {
+                StartCoroutine(StartKill());
+            }
+            alreadystarted = false;
+        }
+        else {
+            Debug.Log("else");
+            alreadystarted = true;
+            StopCoroutine(StartKill());
         }
         // }
         // else
@@ -170,7 +184,7 @@ public class AIManager : MonoBehaviour
     // }
         if (playerHealth != null)
         {
-            playerObject.transform.position = new Vector3(640.9f, 14.021f, 65.394f);
+            //playerObject.transform.position = new Vector3(640.9f, 14.021f, 65.394f);
             playerHealth.ChangeHealth(-5);
         }
         else
@@ -183,5 +197,30 @@ public class AIManager : MonoBehaviour
     {
         currentWaypointIndex = (currentWaypointIndex + 1) % patrolWaypoints.Length;
         agent.SetDestination(patrolWaypoints[currentWaypointIndex].position);
+    }
+
+    public void stopCoroutineAfterDie()
+    {
+        StopCoroutine(StartKill());
+    }
+
+    IEnumerator StartKill()
+    {
+        Debug.Log("enteredstartkill");
+        while (distanceToPlayer < killDistance)
+        {
+            yield return new WaitForSeconds(1f); // 20 seconds is a good speed but less is for gameplay.
+
+            // Decrease the score by 1.
+            Debug.Log("hurtin");
+            if (playerHealth != null)
+            {
+                playerHealth.ChangeHealth(-10);
+            }
+            else
+            {
+                Debug.Log("PlayerHealth is null");
+            }
+        }
     }
 }
