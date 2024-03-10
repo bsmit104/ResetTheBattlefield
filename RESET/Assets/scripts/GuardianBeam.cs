@@ -92,6 +92,16 @@ public class GuardianBeam : MonoBehaviour
         float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
         return distanceToPlayer < killDistance;
     }
+
+    void OnDestroy()
+    {
+        // Check if the particle system exists and destroy it
+        if (beamParticles != null)
+        {
+            Destroy(beamParticles.gameObject);
+        }
+    }
+
 }
 // using UnityEngine;
 
