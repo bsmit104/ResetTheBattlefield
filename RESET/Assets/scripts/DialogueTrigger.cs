@@ -8,13 +8,15 @@ public class PlayerDetect : MonoBehaviour
     public GameObject InteractUI;
     public GameObject DialogueBox;
     public Dialogue dialogue;
+    bool ready = false;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (ready && Input.GetKeyDown(KeyCode.E))
         {
             if (!DialogueBox.activeSelf)
             {
+                InteractUI.SetActive(false);
                 TriggerDialogue();
             }
             else if (DialogueBox.activeSelf)
@@ -28,6 +30,7 @@ public class PlayerDetect : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            ready = true;
             InteractUI.SetActive(true);
         }
     }
@@ -36,6 +39,7 @@ public class PlayerDetect : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            ready = false;
             InteractUI.SetActive(false);
         }
     }
