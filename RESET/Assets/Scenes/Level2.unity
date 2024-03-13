@@ -22675,8 +22675,9 @@ MonoBehaviour:
     name: NPC
     sentences:
     - Oh thank goodness, a sentinel! I am not sure how you got this, but the city
-      is in chaos from some slime attack!
-    - I work with the time travel organization across the city.
+      is in chaos from an Unity 2025.25.2f AI invasion!
+    - They have taken the shape of red capsules for some reason! I work with the
+      time travel organization across the city.
     - If you can make it there, you can reset the time before the attack and save
       us all!
 --- !u!135 &670352875
