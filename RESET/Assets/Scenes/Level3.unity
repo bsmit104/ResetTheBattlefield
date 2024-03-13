@@ -532,7 +532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beamRange: 10
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 7
+  killDistance: 10
 --- !u!54 &72683403
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -572,9 +572,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039be84db9716bc4885dae246536304c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDetectionRange: 10
-  chaseDistance: 10
-  killDistance: 7
+  maxDetectionRange: 15
+  chaseDistance: 15
+  killDistance: 10
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -593,7 +593,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 3
   m_AngularSpeed: 120
@@ -852,9 +852,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8248c8c1000c554a8f537ddc5d70fdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beamRange: 5
+  beamRange: 10
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 7
+  killDistance: 10
 --- !u!54 &125153265
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -894,9 +894,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039be84db9716bc4885dae246536304c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDetectionRange: 10
-  chaseDistance: 10
-  killDistance: 7
+  maxDetectionRange: 15
+  chaseDistance: 15
+  killDistance: 10
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -915,7 +915,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1129,7 +1129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beamRange: 10
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 7
+  killDistance: 10
 --- !u!54 &160084765
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1169,9 +1169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039be84db9716bc4885dae246536304c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDetectionRange: 10
-  chaseDistance: 10
-  killDistance: 7
+  maxDetectionRange: 15
+  chaseDistance: 15
+  killDistance: 10
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -1190,7 +1190,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 3
   m_AngularSpeed: 120
@@ -7894,7 +7894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beamRange: 10
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 7
+  killDistance: 10
 --- !u!54 &465859201
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7934,9 +7934,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039be84db9716bc4885dae246536304c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDetectionRange: 10
-  chaseDistance: 10
-  killDistance: 7
+  maxDetectionRange: 15
+  chaseDistance: 15
+  killDistance: 10
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -7955,7 +7955,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 3
   m_AngularSpeed: 120
@@ -8692,7 +8692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beamRange: 10
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 7
+  killDistance: 10
 --- !u!54 &645993454
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8732,9 +8732,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039be84db9716bc4885dae246536304c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDetectionRange: 10
-  chaseDistance: 10
-  killDistance: 7
+  maxDetectionRange: 15
+  chaseDistance: 15
+  killDistance: 10
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -8753,7 +8753,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 3
   m_AngularSpeed: 120
@@ -14638,7 +14638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beamRange: 10
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 7
+  killDistance: 10
 --- !u!54 &873715498
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14678,9 +14678,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039be84db9716bc4885dae246536304c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDetectionRange: 10
-  chaseDistance: 10
-  killDistance: 7
+  maxDetectionRange: 15
+  chaseDistance: 15
+  killDistance: 10
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -14699,7 +14699,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 3
   m_AngularSpeed: 120
@@ -15368,9 +15368,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8248c8c1000c554a8f537ddc5d70fdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beamRange: 5
+  beamRange: 10
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 7
+  killDistance: 10
 --- !u!54 &1053151533
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15410,9 +15410,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039be84db9716bc4885dae246536304c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDetectionRange: 10
-  chaseDistance: 10
-  killDistance: 7
+  maxDetectionRange: 15
+  chaseDistance: 15
+  killDistance: 10
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -15431,7 +15431,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -17355,7 +17355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beamRange: 10
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 7
+  killDistance: 10
 --- !u!54 &1453954449
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17395,9 +17395,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039be84db9716bc4885dae246536304c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDetectionRange: 10
-  chaseDistance: 10
-  killDistance: 7
+  maxDetectionRange: 15
+  chaseDistance: 15
+  killDistance: 10
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -17416,7 +17416,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 3
   m_AngularSpeed: 120
@@ -18240,7 +18240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beamRange: 10
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 7
+  killDistance: 10
 --- !u!54 &1635496637
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18280,9 +18280,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039be84db9716bc4885dae246536304c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDetectionRange: 10
-  chaseDistance: 10
-  killDistance: 7
+  maxDetectionRange: 15
+  chaseDistance: 15
+  killDistance: 10
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -18301,7 +18301,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 3
   m_AngularSpeed: 120
@@ -19333,7 +19333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beamRange: 10
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 7
+  killDistance: 10
 --- !u!54 &1910409908
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19373,9 +19373,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039be84db9716bc4885dae246536304c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDetectionRange: 10
-  chaseDistance: 10
-  killDistance: 7
+  maxDetectionRange: 15
+  chaseDistance: 15
+  killDistance: 10
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -19394,7 +19394,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 3
   m_AngularSpeed: 120

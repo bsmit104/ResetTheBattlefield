@@ -22197,9 +22197,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039be84db9716bc4885dae246536304c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDetectionRange: 10
-  chaseDistance: 10
-  killDistance: 7
+  maxDetectionRange: 15
+  chaseDistance: 15
+  killDistance: 10
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -22218,7 +22218,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -22317,9 +22317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8248c8c1000c554a8f537ddc5d70fdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beamRange: 5
+  beamRange: 10
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 7
+  killDistance: 10
 --- !u!1 &614093206 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4504409719310791647, guid: 9b14e6704f066704d801c2a1d4a3a421, type: 3}
@@ -32059,9 +32059,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039be84db9716bc4885dae246536304c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDetectionRange: 10
-  chaseDistance: 10
-  killDistance: 7
+  maxDetectionRange: 15
+  chaseDistance: 15
+  killDistance: 10
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -32080,7 +32080,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -32179,9 +32179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8248c8c1000c554a8f537ddc5d70fdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beamRange: 5
+  beamRange: 10
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 7
+  killDistance: 10
 --- !u!1 &1869253755 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7917349904687423284, guid: 9b14e6704f066704d801c2a1d4a3a421, type: 3}
@@ -33546,9 +33546,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039be84db9716bc4885dae246536304c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDetectionRange: 10
-  chaseDistance: 10
-  killDistance: 7
+  maxDetectionRange: 15
+  chaseDistance: 15
+  killDistance: 10
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -33567,7 +33567,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 3
   m_AngularSpeed: 120
@@ -33668,7 +33668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beamRange: 10
   beamParticlesPrefab: {fileID: 5904350113833778876, guid: 77be93c2b85d3944793797c973c930be, type: 3}
-  killDistance: 7
+  killDistance: 10
 --- !u!1001 &2125981916
 PrefabInstance:
   m_ObjectHideFlags: 0
