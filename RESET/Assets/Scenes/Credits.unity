@@ -5213,15 +5213,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'BRAYDEN -  LEAD PROGRAMMER
 
-    GARRETT - ART & ANIMATIONS
+    GARRETT - ART, ANIMATIONS, PROGRAMMER
+    , & SOUND
 
-    DANIEL
-    - NPC INTERACTIONS
+    DANIEL - NPC INTERACTIONS
 
     NATHAN
 
-    ONLINE ASSETS - Pixabay (thunder and shoot
-    audio) UNIVERSFIELD (reload audio)'
+    ONLINE ASSETS - Pixabay
+    (thunder and shoot audio) UNIVERSFIELD (reload audio)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 83bad90b90000a54c9a785ef0cd25438, type: 2}
   m_sharedMaterial: {fileID: 5964233800885681418, guid: 83bad90b90000a54c9a785ef0cd25438, type: 2}

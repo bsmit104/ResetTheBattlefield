@@ -12,6 +12,7 @@ public class Shoot : MonoBehaviour
     public int maxBullets = 10;
     private int currentShots = 10;
     private bool isReloading = false;
+    public ParticleSystem muzzle;
 
     public float reloadTime = 2f;
 
@@ -73,6 +74,7 @@ public class Shoot : MonoBehaviour
                 }
 
                 ShootBullet();
+                muzzle.Play();
                 animation1.Play("Shoot", 0, 0.0f);
                 currentShots--;
                 audioSource.Play();
